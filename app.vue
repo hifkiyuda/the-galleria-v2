@@ -1,4 +1,0 @@
-<template>
-  <Navbar />
-  <Hero />
-</template>

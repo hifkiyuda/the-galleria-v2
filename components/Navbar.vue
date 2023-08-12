@@ -1,13 +1,14 @@
 <template>
-  <header class="container m-auto py-6 px-16 flex flex-row justify-between items-center font-['Lucida_Sans']">
-    <NuxtLink class="flex flex-row items-center">
-      <div class="font-light text-2xl">The Galleria |</div>
-      <img class="h-7 ml-2" src="../assets/images/hyp-logo-black.png" />
-    </NuxtLink>
-    <nav class="flex flex-row justify-between items-center uppercase text-base font-light">
-      <NuxtLink class="p-2 ml-10 hover:cursor-pointer">Home</NuxtLink>
-      <NuxtLink class="p-2 ml-10 hover:cursor-pointer">Paintings</NuxtLink>
-      <NuxtLink class="p-2 ml-10 hover:cursor-pointer">Artists</NuxtLink>
+  <header class="container m-auto w-screen px-16 pt-4 fixed z-10 bg-white">
+    <nav class="flex flex-row justify-between items-center font-['lucida_sans'] border-b pb-4">
+      <NuxtLink class="cursor-pointer">
+        <div class="flex flex-row items-center">
+          <img class="h-8" src="~/assets/images/hyp-logo-black.png" alt="The Galleria by hyp" />
+          <p class="text-2xl mx-2">|</p>
+          <p class="text-xl">The Galleria</p>
+        </div>
+      </NuxtLink>
+      <button>Menu</button>
     </nav>
   </header>
 </template>
