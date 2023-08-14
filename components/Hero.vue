@@ -5,10 +5,10 @@
         <div class="text-white m-20">
           <h1 class="text-8xl mb-8 font-Aboreto">The Galleria.</h1>
           <div class="font-['lucida_sans'] font-light text-xl mb-16">
-            <p>Featuring Various Collections of Artwork from Around The Globe.</p>
+            <p>Featuring Various Collection of Artworks from Around The Globe.</p>
             <p>Based on Art Institute of Chicago API.</p>
             <a href="#artworks">
-              <button class="px-12 py-2 text-md mt-10 border-2 bg-white text-black">Explore the collections</button>
+              <button class="px-12 py-2 text-md mt-10 bg-white text-black hover:bg-red-600 hover:text-white  ransition duration-300 ease-in-out">Explore the collections</button>
             </a>
           </div>
         </div>

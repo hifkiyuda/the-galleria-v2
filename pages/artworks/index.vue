@@ -1,5 +1,5 @@
 <template>
-  <div class="px-16 py-24 m-auto font-['lucida_sans']">
+  <div class="container px-16 py-24 m-auto font-['lucida_sans']">
     <div class="mb-12 mt-4">
       <h1 class="text-4xl">The Collection of Artworks</h1>
     </div>
@@ -36,15 +36,9 @@ fetchData();
 const changePage = (newPage) => {
   if (newPage >= 1) {
     page.value = newPage;
-    console.log(newPage);
-    console.log(artworks);
     fetchData();
   }
 };
-
-// const { data: response } = await useFetch(`https://api.artic.edu/api/v1/artworks?page=${page}`);
-// const artworks = toRaw(response.value.data);
-// console.log(artworks);
 </script>
 
 
