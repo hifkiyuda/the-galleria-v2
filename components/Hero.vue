@@ -8,13 +8,13 @@
             <p>Featuring Various Collection of Artworks from Around The Globe.</p>
             <p>Based on Art Institute of Chicago API.</p>
             <a href="#artworks">
-              <button class="px-12 py-2 text-base md:text-md mt-10 bg-white text-black hover:bg-red-600 hover:text-white  ransition duration-300 ease-in-out">Explore the collections</button>
+              <button class="px-12 py-2 text-base md:text-md mt-10 bg-white text-black hover:bg-red-600 hover:text-white  ransition duration-300 ease-in-out">Explore the collection</button>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <p class="text-xs italic font-['lucida_sans'] font-gray-600 text-end">Cover: Liberty Leading the People</p> -->
+    <p class="text-xs italic font-['lucida_sans'] font-gray-600 text-end">Cover: Liberty Leading the People</p>
   </div>
 </template>
 

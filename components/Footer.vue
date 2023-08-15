@@ -8,16 +8,10 @@
         <p>Featuring Various Collection</p>
         <p>of Artworks from Around The Globe</p>
       </div>
-      <div class="mb-10 text-base">
-        <a href="#" class="hover:underline">
-          <p>Home</p>
-        </a>
-        <a href="#about" class="hover:underline">
-          <p>About</p>
-        </a>
-        <NuxtLink to="/artworks" class="hover:underline">
-          <p>Artworks</p>
-        </NuxtLink>
+      <div class="mb-10 text-base flex flex-col">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <NuxtLink to="/artworks" class="hover:underline">Artworks</NuxtLink>
       </div>
       <div>
         <div class="mb-6">
