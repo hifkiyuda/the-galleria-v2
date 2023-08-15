@@ -5,7 +5,7 @@
       <p class="text-xl">{{ artwork.artist_title }}</p>
     </div>
     
-    <div class="flex flex-row">
+    <div class="flex lg:flex-row flex-col">
       <img class="h-96 mr-24" :src="`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`" :alt="artwork.title" />
       <div>
         <div class="flex flex-row mb-4">
@@ -60,9 +60,10 @@
             <svg v-else xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 13v-1h6V6h1v6h6v1h-6v6h-1v-6H5Z"/></svg>
           </button>
         </div>
-        <ul class="list-disc px-4 text-base" :class="{ 'hidden': !isPublicationOpen }">
+        <ul v-if="publication.length" class="list-disc px-4 text-base" :class="{ 'hidden': !isPublicationOpen }">
           <li v-for="p in publication" class="mb-2">{{ p }}</li>
         </ul>
+        <p v-else class="text-gray-600 italic mt-4" :class="{ 'hidden': !isPublicationOpen }">Object information is a work in progress and may be updated as new research findings emerge.</p>
       </div>
       <div class="mt-8 border-b pb-4">
         <div class="flex flex-row justify-between items-center mb-4">
@@ -72,9 +73,10 @@
             <svg v-else xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 13v-1h6V6h1v6h6v1h-6v6h-1v-6H5Z"/></svg>
           </button>
         </div>
-        <ul class="list-disc px-4 text-base" :class="{ 'hidden': !isExhibitionOpen }">
+        <ul v-if="exhibition.length" class="list-disc px-4 text-base" :class="{ 'hidden': !isExhibitionOpen }">
           <li v-for="e in exhibition" class="mb-2">{{ e }}</li>
         </ul>
+        <p v-else class="text-gray-600 italic mt-4" :class="{ 'hidden': !isExhibitionOpen }">Object information is a work in progress and may be updated as new research findings emerge.</p>
       </div>
       <div class="mt-8 border-b pb-4">
         <div class="flex flex-row justify-between items-center mb-4">
@@ -84,7 +86,8 @@
             <svg v-else xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 13v-1h6V6h1v6h6v1h-6v6h-1v-6H5Z"/></svg>
           </button>
         </div>
-        <p :class="{ 'hidden': !isProvenanceOpen }" class="mb-2">{{ artwork.provenance_text }}</p>
+        <p v-if="artwork.provenance_text" :class="{ 'hidden': !isProvenanceOpen }" class="mb-2">{{ artwork.provenance_text }}</p>
+        <p v-else class="text-gray-600 italic mt-4" :class="{ 'hidden': !isProvenanceOpen }">Object information is a work in progress and may be updated as new research findings emerge.</p>
       </div>
     </div>
   </div>
@@ -95,8 +98,16 @@ import { ref } from 'vue';
 
 const { artwork } = defineProps(['artwork']);
 
-const publication = artwork.publication_history.split('\n\n');
-const exhibition = artwork.exhibition_history.split('\n\n');
+let publication = [];
+let exhibition = [];
+
+if (artwork.publication_history) {
+  publication = artwork.publication_history.split('\n\n');
+}
+
+if (artwork.exhibition_history) {
+  exhibition = artwork.exhibition_history.split('\n\n');
+}
 
 const isPublicationOpen = ref(false);
 const isExhibitionOpen = ref(false);

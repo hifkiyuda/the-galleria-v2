@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-16 py-24 m-auto">
+  <div class="container lg:py-24 md:py-20 sm:py-16 py-12 px-4 xl:px-16 lg:px-12 md:px-8 sm:px-6 w-full m-auto">
     <ArtworkDetail :artwork="artwork" />
   </div>
 </template>

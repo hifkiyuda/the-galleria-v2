@@ -1,9 +1,7 @@
 <template>
-  <div class="container px-16 py-24 m-auto font-['lucida_sans']">
-    <div class="mb-12 mt-4">
-      <h1 class="text-4xl">The Collection of Artworks</h1>
-    </div>
-    <div class="grid grid-cols-4 gap-8">
+  <div class="container lg:py-24 md:py-20 sm:py-16 py-12 px-4 xl:px-16 lg:px-12 md:px-8 sm:px-6 w-full m-auto font-['lucida_sans']">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl my-8 lg:mb-12 lg:mt-4">The Collection of Artworks</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
       <div v-for="artwork in artworks">
         <ArtworkCard :artwork="artwork" />
       </div>
@@ -20,12 +18,12 @@
 import { ref } from 'vue';
 
 const page = ref(1);
-const artworks = ref([]); // Initialize artworks as a reactive array
+const artworks = ref([]);
 
 const fetchData = async () => {
   try {
     const { data: response } = await useFetch(`https://api.artic.edu/api/v1/artworks?page=${page.value}`);
-    artworks.value = toRaw(response.value.data); // Update artworks with fetched data
+    artworks.value = toRaw(response.value.data);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
