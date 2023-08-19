@@ -6,7 +6,7 @@
           <p class="text-md sm:text-lg md:text-xl">The Galleria</p>
         </div>
       </NuxtLink>
-      <button class="text-md" @click="openMenu">Menu</button>
+      <button class="text-md hover:underline" @click="openMenu">Menu</button>
     </nav>
   </header>
 

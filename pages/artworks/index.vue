@@ -23,8 +23,8 @@ const artworks = ref([]);
 
 const fetchData = async () => {
   try {
-    const response = await axios.get(`/api/artworks/${page.value}`);
-    artworks.value = response.data;
+    const { data: response } = await axios.get(`/api/artworks/${page.value}`);
+    artworks.value = response;
   } catch (error) {
     console.error('Error fetching data:', error);
   }
