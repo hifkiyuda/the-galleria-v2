@@ -1,6 +1,6 @@
 <template>
   <header class="m-auto w-full fixed z-10 bg-white pt-4 px-4 xl:px-16 lg:px-12 md:px-8 sm:px-6">
-    <nav class="flex flex-row justify-between items-center font-['lucida_sans'] border-b pb-4">
+    <nav class="flex flex-row justify-between items-center border-b pb-4">
       <NuxtLink class="cursor-pointer" to="/">
         <div class="flex flex-row items-center">
           <p class="text-md sm:text-lg md:text-xl">The Galleria</p>
@@ -22,7 +22,9 @@
     <div class="flex flex-row items-center p-4">
       <p class="text-sm">The Galleria</p>
       <p class="text-sm mx-2">|</p>
-      <img class="h-4" src="~/assets/images/hyp-logo-black.png" alt="The Galleria by hyp" />
+      <a href="https://github.com/hifkiyuda" target="_blank">
+        <img class="h-4" src="~/assets/images/hyp-logo-black.png" alt="The Galleria by hyp" />
+      </a>
     </div>
   </div>
   <div v-if="isMenuOpen" @click="closeMenu" class="fixed inset-0 bg-black opacity-50 z-10"></div>

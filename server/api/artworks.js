@@ -1,8 +1,6 @@
-export default defineEventHandler((event) => {
+export default defineEventHandler(async () => {
 
-  const { page } = useQuery(event);
-
-  return {
-    message: `Hello, ${page}`,
-  };
+  const { data } = await $fetch('https://api.artic.edu/api/v1/artworks');
+  
+  return data;
 });

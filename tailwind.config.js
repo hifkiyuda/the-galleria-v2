@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        custom: ['Lucida Sans', 'sans'],
-      },
     },
   },
   plugins: [],
