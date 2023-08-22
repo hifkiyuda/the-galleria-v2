@@ -4,47 +4,46 @@
       <h1 class="mb-2 font-semibold text-xl md:text-2xl lg:text-3xl">{{ artwork.title }}, {{ artwork.date_display }}</h1>
       <p class="text-base sm:text-lg md:text-xl">{{ artwork.artist_title }}</p>
     </div>
-    
     <div class="flex items-center justify-center flex-col text-center">
       <img class="sm:h-96 mb-8" :src="`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`" :alt="artwork.title" />
       <div class="w-full m-auto">
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Title</p>
           <p class="font-semibold text-base"> {{ artwork.title }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Artist</p>
           <p class="font-semibold text-base"> {{ artwork.artist_title }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Place</p>
           <p class="font-semibold text-base"> {{ artwork.place_of_origin }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Date</p>
           <p class="font-semibold text-base"> {{ artwork.date_display }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Artwork Type</p>
           <p class="font-semibold text-base"> {{ artwork.artwork_type_title }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Dimensions</p>
           <p class="font-semibold text-base"> {{ artwork.dimensions }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Medium</p>
           <p class="font-semibold text-base"> {{ artwork.medium_display }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Credit line</p>
           <p class="font-semibold text-base"> {{ artwork.credit_line }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">Reference Number</p>
           <p class="font-semibold text-base"> {{ artwork.main_reference_number }}</p>
         </div>
-        <div class="flex flex-col mb-4 mx-4">
+        <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">IIIF Manifest</p>
           <p class="font-semibold text-base break-words"> {{ `${artwork.api_link}/manifest.json` }}</p>
         </div>
