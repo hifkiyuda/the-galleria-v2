@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-white">
-    {{ error }}
+  <div>
+    <p>{{ error.statusCode }}</p>
+    <p>{{ error.message }}</p>
   </div>
 </template>
 

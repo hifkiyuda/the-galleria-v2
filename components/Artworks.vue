@@ -6,6 +6,7 @@
         <NuxtLink class="text-base text-gray-600 italic cursor-pointer hover:underline" to="/artworks">Dive deeper to discover more</NuxtLink>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 sm:grid-cols-2 sm:gap-8 align-content-start">
+        <div v-if="loading">Loading...</div>
         <div v-for="artwork in artworks" class="mb-8">
           <ArtworkCard :artwork="artwork" />
         </div>
@@ -16,6 +17,11 @@
 
 <script setup>
 import axios from 'axios';
+import { ref } from 'vue';
 
+const loading = ref(false);
+
+loading.value = true;
 const { data: artworks } = await axios.get('/api/artworks');
+loading.value = false;
 </script>
