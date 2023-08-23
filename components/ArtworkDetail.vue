@@ -45,7 +45,7 @@
         </div>
         <div class="flex flex-col items-center mb-4 mx-4">
           <p class="text-sm text-gray-600">IIIF Manifest</p>
-          <p class="font-semibold text-base break-words"> {{ `${artwork.api_link}/manifest.json` }}</p>
+          <p class="font-semibold text-base break-words w-full"> {{ `${artwork.api_link}/manifest.json` }}</p>
         </div>
       </div>
     </div>

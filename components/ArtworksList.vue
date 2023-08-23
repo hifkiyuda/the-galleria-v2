@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-const { artworks, page } = defineProps(['artworks', 'page']);
+const { artworks } = defineProps(['artworks']);
 </script>

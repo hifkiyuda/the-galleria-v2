@@ -8,10 +8,12 @@
 <script setup>
 import axios from 'axios';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 
 const router = useRouter();
-const page = ref(1);
+const route = useRoute();
+
+const page = ref(route.params.page || 1);
 const artworks = ref([]);
 
 const fetchData = async (pageNumber) => {
@@ -38,6 +40,3 @@ onMounted(async () => {
   artworks.value = await fetchData(page.value);
 });
 </script>
-
-
-
