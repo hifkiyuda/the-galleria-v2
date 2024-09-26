@@ -23,7 +23,7 @@
       <p class="text-sm">The Galleria</p>
       <p class="text-sm mx-2">|</p>
       <a href="https://github.com/hifkiyuda" target="_blank">
-        <img class="h-4" src="~/assets/images/hyp-logo-black.png" alt="The Galleria by hyp" />
+        <img class="h-4" src="~/assets/img/hyp-black.png" alt="The Galleria by hyp" />
       </a>
     </div>
   </div>
