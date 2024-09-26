@@ -31,7 +31,7 @@
     <div class="flex flex-row items-center mb-2">
       <p class="text-xs text-gray-400">©2023 - The Galleria |</p>
       <a href="https://github.com/hifkiyuda" target="_blank">
-        <img class="h-4 ml-2" src="~/assets/images/hyp-logo-white.png" alt="The Galleria by hyp" />
+        <img class="h-4 ml-2" src="~/assets/img/hyp-white.png" alt="The Galleria by hyp" />
       </a>
     </div>
     <p class="text-xs text-gray-400">Digital image courtesy of the Art Institute of Chicago®</p>
