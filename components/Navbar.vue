@@ -3,7 +3,7 @@
     <nav class="flex flex-row justify-between items-center border-b pb-4">
       <NuxtLink class="cursor-pointer" to="/">
         <div class="flex flex-row items-center">
-          <p class="text-md sm:text-lg md:text-xl">The Galleria</p>
+          <p class="text-md sm:text-lg md:text-xl">The Galleria II</p>
         </div>
       </NuxtLink>
       <button class="text-md hover:underline" @click="openMenu">Menu</button>
@@ -20,7 +20,7 @@
       <a class="mb-20 hover:underline transition duration-300 ease-in-out" href="https://www.artic.edu/" target="_blank">Art Institute of Chicago</a>
     </nav>
     <div class="flex flex-row items-center p-4">
-      <p class="text-sm">The Galleria</p>
+      <p class="text-sm">The Galleria II</p>
       <p class="text-sm mx-2">|</p>
       <a href="https://github.com/hifkiyuda" target="_blank">
         <img class="h-4" src="~/assets/img/hyp-black.png" alt="The Galleria by hyp" />

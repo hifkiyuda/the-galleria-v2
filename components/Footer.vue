@@ -1,7 +1,7 @@
 <template>
   <footer class="m-auto w-full text-white bg-black rounded-tl-3xl rounded-tr-3xl pb-8 pt-8 px-8 xl:pt-16 lg:pt-12 xl:px-16 lg:px-12">
     <div class="flex flex-row items-center mb-16">
-      <p class="text-md sm:text-lg md:text-xl">The Galleria</p>
+      <p class="text-md sm:text-lg md:text-xl">The Galleria II</p>
     </div>
     <div class="flex lg:flex-row flex-col items-start justify-between mb-32">
       <div class="text-xl md:text-2xl mb-10">
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="flex flex-row items-center mb-2">
-      <p class="text-xs text-gray-400">©2023 - The Galleria |</p>
+      <p class="text-xs text-gray-400">©2023 - The Galleria II |</p>
       <a href="https://github.com/hifkiyuda" target="_blank">
         <img class="h-4 ml-2" src="~/assets/img/hyp-white.png" alt="The Galleria by hyp" />
       </a>
