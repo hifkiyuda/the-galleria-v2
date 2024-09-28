@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: 'The Galleria',
+      title: 'The Galleria II',
     },
   },
 })
